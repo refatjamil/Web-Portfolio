@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Rifat Jamil</title>
+
+
+    <link rel="stylesheet" href="{% static 'my_resume/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'my_resume/css/bootstrap.css' %}">
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+
+
+    {% block my_resumecss %}
+    <link rel="stylesheet" href="{% static 'my_resume/css/style.css' %}">
+    {% endblock my_resumecss %}
+
+
+</head>
+<body>
+
+    <div class="container-fluid bg-light">
+        <div class="row">
+            
+            <div class="col-sm-2">
+                {% include 'my_resume/sidebar.html' %}
+
+            </div>
+
+
+
+
+
+            <div class="col-sm-8"> 
+                {% block content %} 
+
+
+                {% endblock content %}
+
+            </div>
+
+            <div class="text-center mt-5">
+                <h4> Connect With Me.</h4>
+            </div>
+
+            <div class="text-center px-1 ">
+                <a href="https://www.facebook.com/md.rifatjs/" target="_blank"><i class="fa-brands fa-facebook i-color fa-3x"></i></a>
+                <a href="https://twitter.com/rifat_js" target="_blank"><i class="fa-brands fa-twitter i-color fa-3x"></i></a>
+                <a href="https://www.instagram.com/rifaatxamil/" target="_blank"><i class="fa-brands fa-instagram i-color fa-3x"></i></a>
+                <a href="https://github.com/rifatjamil54" target="_blank"><i class="fa-brands fa-github i-color fa-3x"></i></a>        
+            </div>
+
+           
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="{% static 'my_resume/js/jquery.js' %}"></script>
+<script src="{% static 'my_resume/js/popper.js' %}"></script>
+<script src="{% static 'my_resume/js/bootstrap.js' %}"></script>
+<script src="{% static 'my_resume/js/all.min.js' %}"></script>
+
+</body>
+</html>
