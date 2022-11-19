@@ -35,41 +35,29 @@
 
 </head>
 <body>
-
-    <div class="container-fluid bg-light">
-        <div class="row">
- 
-          <div class="col-sm-3"> </div>
-
-          <div class="col-sm-6"> 
-
-          <nav class="navbar bg-light text-center container fixed-top  navbar-expand-lg col-sm-6">
-                  <a href="{% url 'home' %}" class="navbar-brand btn btn-outline-dark my-3 mr-5  {{hactive}}">Home</a>
-                  <a href="{% url 'project' %}" class="navbar-brand btn btn-outline-dark my-3 mr-5  {{pactive}}">Projects</a>
-                  <a href="{% url 'skill' %}" class="navbar-brand btn btn-outline-dark my-3 mr-5  {{sactive}}">Skill</a>
-                  <a href="{% url 'contact' %}" class="navbar-brand btn btn-outline-dark my-3 mr-5  {{cactive}}">Contact</a>
-                  
-          </nav>  
-              
-              {% block content %} 
-
-
-              {% endblock content %}
-
-          </div>
-
-          <div class="col-sm-3"> </div>
-
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">Navbar</a>
+      
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
         </div>
-
-
-    </div>
-
-
-<script src="{% static 'my_resume/js/jquery.js' %}"></script>
-<script src="{% static 'my_resume/js/popper.js' %}"></script>
-<script src="{% static 'my_resume/js/bootstrap.js' %}"></script>
-<script src="{% static 'my_resume/js/all.min.js' %}"></script>
-
+      </nav>
 </body>
 </html>

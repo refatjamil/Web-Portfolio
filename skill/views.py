@@ -6,3 +6,4 @@ def skill(request):
     context = {'sactive' : 'active'}
 
     return render(request,'skill/skill.html',context)
+

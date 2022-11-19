@@ -1,5 +1,10 @@
-it is my first resume project.
+#minimal design 1:
 
-and i deployment it.
+![screenshot!](static/my_resume/img/minimal desing one 1.png)
 
-here is a link http://rifatjamil.pythonanywhere.com/
+![screenshot!](static/my_resume/img/minimal desing one 2.png)
+
+![screenshot!](static/my_resume/img/minimal desing one 3.png)
+
+
+
