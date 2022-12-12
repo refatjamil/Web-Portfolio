@@ -1,63 +1,35 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends 'my_resume/base.html' %}
 
 
-    <title>Rifat Jamil</title>
+{% block content %}
 
+<div>
 
-    <link rel="stylesheet" href="{% static 'my_resume/css/all.min.css' %}">
-    <link rel="stylesheet" href="{% static 'my_resume/css/bootstrap.css' %}">
+    <div class="pt-5 mx-5 flex flex-col justify-center item-start mx-auto" >
 
+        <div class="mx-5">
+            <div class="px-4">
+                <h5>
+                    <a href="https://github.com/rifatjamil54/User_Registration_Form.git">User_Registration_Form</a>
 
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
-
-
-    {% block my_resumecss %}
-    <link rel="stylesheet" href="{% static 'my_resume/css/style.css' %}">
-    {% endblock my_resumecss %}
-
-
-</head>
-<body>
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-        <!-- Brand -->
-        <a class="navbar-brand" href="#">Navbar</a>
-      
-        <!-- Toggler/collapsibe Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <!-- Navbar links -->
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-          </ul>
+                </h5>
+                <p>
+                    This project has been developed using the popular Django framework.
+                    Users can register their identities.
+                    They can do login and log out of their account.
+                    An unauthenticated user cannot log in.
+                    And they can also change their password. 
+                </p><br>
+                
+            </div>
         </div>
-      </nav>
-</body>
-</html>
+        
+
+    </div>
+</div>
+
+
+
+
+{% endblock content %}
+
