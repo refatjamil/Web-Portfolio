@@ -9,8 +9,10 @@ html,body{
     min-height: 100%;
 }
 
+.unbounded{
+    font-family: 'Open Sans', sans-serif;
 
-
+}
 
 
 .chivo-mono{
@@ -23,8 +25,16 @@ html,body{
 
 .hycolor:visited {
     color: #000000;
+    background-color: transparent;
+    text-decoration: none;
 }
 
 .hycolor:hover{
-    color: #0066FF ;
+    color: #0066ff ;
+    background-color: transparent;
+    text-decoration: underline;
 }
+
+.bigfont{
+    font-size: 50px;
+  }
