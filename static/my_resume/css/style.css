@@ -2,7 +2,6 @@
 
 html,body{
     height:  100%;
-
 }
 
 .container-fluid{
@@ -10,31 +9,40 @@ html,body{
 }
 
 .unbounded{
-    font-family: 'Open Sans', sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 
 }
 
 
-.chivo-mono{
-    font-family: 'Chivo Mono', monospace;
+.open-sans{
+  font-family: 'IBM Plex Mono', monospace;
 }
-
 .ptxt-color{
-    color: #606060;
+    color: rgb(0, 0, 0);
 }
 
-.hycolor:visited {
-    color: #000000;
+
+.hycolor:link {
+    color: rgb(71, 71, 71);
     background-color: transparent;
     text-decoration: none;
-}
-
-.hycolor:hover{
-    color: #0066ff ;
+  }
+.hycolor:visited {
+    color: rgb(71, 71, 71);
+    background-color: transparent;
+    text-decoration: none;
+  }
+.hycolor:hover {
+    color: rgb(0, 0, 0);
     background-color: transparent;
     text-decoration: underline;
-}
+  }
+  
 
 .bigfont{
     font-size: 50px;
+  }
+
+.bg-darkk{
+    background-color: #2e3440
   }
