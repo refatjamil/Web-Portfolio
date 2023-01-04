@@ -12,11 +12,23 @@ html,body{
   font-family: 'M PLUS Rounded 1c', sans-serif;
 
 }
+.stackunbounded{
+  color: rgb(141, 141, 141);
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+
+}
 
 
 .open-sans{
-  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  font-family: 'mm PLUS Rounded 1c', sans-serif;
 }
+
+.open-sa{
+  font-size: 18px;
+  font-family: 'mm PLUS Rounded 1c', sans-serif;
+}
+
 .ptxt-color{
     color: rgb(0, 0, 0);
 }
