@@ -13,7 +13,6 @@ html,body{
 
 }
 .stackunbounded{
-  color: rgb(141, 141, 141);
   font-family: 'M PLUS Rounded 1c', sans-serif;
 
 }
@@ -35,12 +34,12 @@ html,body{
 
 
 .hycolor:link {
-    color: rgb(71, 71, 71);
+    color: rgb(0, 0, 0);
     background-color: transparent;
     text-decoration: none;
   }
 .hycolor:visited {
-    color: rgb(71, 71, 71);
+    color: rgb(0, 0, 0);
     background-color: transparent;
     text-decoration: none;
   }

@@ -30,25 +30,21 @@
             
           </div>
 
-          <div class="col-sm-6">
+          <div class="col-sm-6 shadow">
 
 
-            <div class="text-center my-5 mx-auto ">
-                <div class="text-center">
+            <div class="text-center py-5">
+
                     <img src="{% static 'my_resume/img/my pic.jpg' %}" alt="profilepic" class="img-fluid rounded-circle" width="300px" height="100px">
-                    <h1 class="mt-2 unbounded bigfont"> Rifat Jamil </h1>
-                    <p class="stackunbounded h2"> Python Developer </p>
-                </div><br>
+                    <h1 class="pt-3 unbounded bigfont"> Rifat Jamil </h1>
+                    <p class="pb-5 stackunbounded text-muted h2"> Python Developer </p>
     
 
-                <div class="border-bottom"></div>
 
-                <div>
-                  <a href="{% url 'home' %}" class=" btn btn-outline-dark my-3 mr-5  {{hactive}}">Home</a>
-                  <a href="{% url 'project' %}" class=" btn btn-outline-dark my-3 mr-5  {{pactive}}">Projects</a>
-                  <a href="{% url 'skill' %}" class=" btn btn-outline-dark my-3 mr-5  {{sactive}}">Tech Stacks</a>
-
-                
+                <div class="pt-5">
+                  <a href="{% url 'home' %}" class="rounded-5 btn btn-outline-dark  px-3 {{hactive}}">Home</a>
+                  <a href="{% url 'project' %}" class="rounded-5 btn btn-outline-dark px-3 {{pactive}}">Projects</a>
+                  <a href="{% url 'skill' %}" class="rounded-5 btn btn-outline-dark px-3 {{sactive}}">Tech Stacks</a>
                 </div>
               </div>  
 
@@ -86,7 +82,8 @@
     
                   </section>
                   <!-- Section: Social media -->
-                  <a href="{% url 'contact' %}" class="text-dark my-3 mr-5 ">Contact Me</a>
+
+                  <a href="{% url 'contact' %}" class="text-dark pt-5 ">Contact Me</a>
     
                 </div>
                 <!-- Grid container -->
