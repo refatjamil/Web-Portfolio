@@ -33,19 +33,16 @@ html,body{
 
 
 .hycolor:link {
-    color: #1668ac;
     background-color: transparent;
     text-decoration: none;
   }
 .hycolor:visited {
-    color: #1668ac;
     background-color: transparent;
     text-decoration: none;
   }
 .hycolor:hover {
-    color: #1668ac;
     background-color: transparent;
-    text-decoration: underline;
+    text-decoration: none;
   }
   
 
