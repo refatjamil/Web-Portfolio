@@ -23,12 +23,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=mm+PLUS+Rounded+1c&display=swap" rel="stylesheet">   
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 
     
 <body>      
-    <div class="container-fluid my-auto mx-auto">
+
+    <div class="container-fluid my-auto mx-auto bg-light text-dark">
         <div class="row">
  
           <div class="col-sm-3"> 
@@ -36,20 +37,35 @@
           </div>
 
           <div class="col-sm-6">
+            <header class="mt-4 mb-3">
+                
+              <!-- Twitter -->
+              <a class="btn btn-primary" style="background-color: #55acee;" href="https://twitter.com/rifat_js" role="button"
+                ><i class="fab fa-twitter"></i
+              ></a>
 
 
-            <div class="text-center py-5">
+              <!-- Linkedin -->
+              <a class="btn btn-primary" style="background-color: #0082ca;" href="https://www.linkedin.com/in/refat-jamil/" role="button"
+              ><i class="fab fa-linkedin-in"></i
+              ></a>
 
-                    <img src="{% static 'my_resume/img/my pic.jpg' %}" alt="profilepic" class="img-fluid rounded-circle" width="300px" height="100px">
-                    <h1 class="pt-3 unbounded bigfont"> Rifat Jamil </h1>
-                    <p class="pb-5 stackunbounded text-muted h2"> Python Developer </p>
+              <!-- Github -->
+              <a class="btn btn-primary" style="background-color: #333333;" href="https://github.com/rifatjamil54/" role="button"
+              ><i class="fab fa-github"></i
+              ></a>
+
+          </header>
+
+
+            <div class="text-center">
+              
+
     
-
-
-                <div class="pt-5">
-                  <a href="{% url 'home' %}" class="rounded-pill btn btn-outline-dark  px-3 {{hactive}}">Home</a>
-                  <a href="{% url 'project' %}" class="rounded-pill btn btn-outline-dark px-3 {{pactive}}">Projects</a>
-                  <a href="{% url 'skill' %}" class="rounded-pill btn btn-outline-dark px-3 {{sactive}}">Stacks</a>
+                <div class="mt-4 mb-3">
+                  <a href="{% url 'home' %}" class="rounded-pill btn btn-outline-mycolor  px-3 {{hactive}}">Home</a>
+                  <a href="{% url 'project' %}" class="rounded-pill btn btn-outline-mycolor px-3 {{pactive}}">Projects</a>
+                  <a href="{% url 'skill' %}" class="rounded-pill btn btn-outline-mycolor px-3 {{sactive}}">Stacks</a>
                 </div>
               </div>  
 
@@ -60,43 +76,20 @@
 
               {% endblock content %}
 
-              <div class="border-bottom"></div>
 
 
               <footer class="text-center">
                 <!-- Grid container -->
                 <div class="container p-4 pb-0">
 
-                  <!-- Section: Social media -->
-                  <section class="mb-4">
-                    <!-- Facebook -->
-                    <a href="https://www.facebook.com/md.rifatjs/" class="btn btn-outline-dark my-3 mr-5 "><i class="fa-brands fa-facebook i-color fa-1x"></i></a>
-    
-                    <!-- Twitter -->
-                    <a href="https://twitter.com/rifat_js" class="btn btn-outline-dark my-3 mr-5 "><i class="fa-brands fa-twitter i-color fa-1x"></i></a>
-    
-                    <!-- Instagram -->
-                    <a href="https://www.instagram.com/rifaatxamil/" class="btn btn-outline-dark my-3 mr-5 "><i class="fa-brands fa-instagram i-color fa-1x"></i></a>
-              
-                    <!-- Linkedin -->
-                    <a href="https://www.linkedin.com/in/rifat-jamil-76549a230/" class="btn btn-outline-dark my-3 mr-5 "><i class="fa-brands fa-linkedin"></i></i></a>
-    
-                    <!-- Github -->
-                    <a href="https://github.com/rifatjamil54" class="btn btn-outline-dark my-3 mr-5 "><i class="fab fa-github"></i></a>
-    
-    
-                  </section>
-                  <!-- Section: Social media -->
-
-                  <a href="{% url 'contact' %}" class="text-dark pt-5 ">Contact Me</a>
+                  <a href="{% url 'contact' %}" class="pt-5 ">Contact Me</a>
     
                 </div>
                 <!-- Grid container -->
               
                 <!-- Copyright -->
                 <div class="text-center p-3">
-                  © 2023 Copyright:
-                  <a class="text-dark" href="/">by Refat Jamil</a>
+                  © 2023 Copyright by Refat Jamil
                 </div>
                 <!-- Copyright -->
               </footer>
