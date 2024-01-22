@@ -1,7 +1,6 @@
 from django.db import models
 
 # Create your models here.
-
 class Message(models.Model):
     m_Name = models.CharField(max_length=100,null=True)
     m_Email =models.CharField(max_length=100,null=True)
